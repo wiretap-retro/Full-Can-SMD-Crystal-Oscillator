@@ -1,0 +1,145 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x03
+#
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP_Small
+#
+DEF Device_CP_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_CP_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 50 50 1 1 P
+X ~ 2 0 -100 73 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Oscillator_ASCO
+#
+DEF Oscillator_ASCO X 0 20 Y Y 1 F N
+F0 "X" -300 250 50 H V L CNN
+F1 "Oscillator_ASCO" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_SMD_Abracon_ASCO-4Pin_1.6x1.2mm" 100 -350 50 H I C CNN
+F3 "" -225 125 50 H I C CNN
+$FPLIST
+ Oscillator*Abracon*ASCO*1.6x1.2mm*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+P 9 0 1 0 -225 100 -200 100 -200 150 -175 150 -175 100 -150 100 -150 150 -125 150 -125 100 N
+X Tri-State 1 -400 0 100 R 50 50 1 1 T
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 400 0 100 L 50 50 1 1 O
+X VDD 4 0 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Oscillator_CXO_DIP14
+#
+DEF Oscillator_CXO_DIP14 X 0 10 Y Y 1 F N
+F0 "X" -200 250 50 H V L CNN
+F1 "Oscillator_CXO_DIP14" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_DIP-14" 450 -350 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+ALIAS TFT680 GTXO-14T
+$FPLIST
+ Oscillator*DIP*14*
+$ENDFPLIST
+DRAW
+S -200 200 200 -200 0 1 10 f
+P 9 0 1 0 -75 -25 -50 -25 -50 25 -25 25 -25 -25 0 -25 0 25 25 25 25 -25 N
+X EN 1 -300 0 100 R 50 50 1 1 I
+X Vcc 14 0 300 100 D 50 50 1 1 W
+X GND 7 0 -300 100 U 50 50 1 1 W
+X OUT 8 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_ADP1710AUJZ-3.3-R7
+#
+DEF SamacSys_Parts_ADP1710AUJZ-3.3-R7 IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SamacSys_Parts_ADP1710AUJZ-3.3-R7" 850 200 50 H V L CNN
+F2 "SOT95P280X100-5N" 850 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/ADP1710AUJZ-3.3-R7.pdf" 850 0 50 H I L CNN
+F4 "LDO Voltage Regulators IC 150mA LDO CMOS" 850 -100 50 H I L CNN "Description"
+F5 "1" 850 -200 50 H I L CNN "Height"
+F6 "584-ADP1710AUJZ3.3R7" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-ADP1710AUJZ3.3R7" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linear Technology" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "ADP1710AUJZ-3.3-R7" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+X IN 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X EN 3 0 -200 200 R 50 50 0 0 P
+X ADJ 4 1000 0 200 L 50 50 0 0 P
+X OUT 5 1000 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_SN74LV1T34DBVRG4
+#
+DEF SamacSys_Parts_SN74LV1T34DBVRG4 IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_SN74LV1T34DBVRG4" 950 200 50 H V L CNN
+F2 "SOT95P280X145-5N" 950 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/sn74lv1t34" 950 0 50 H I L CNN
+F4 "Single Power Supply BUFFER Logic Level Shifter (no enable)" 950 -100 50 H I L CNN "Description"
+F5 "1.45" 950 -200 50 H I L CNN "Height"
+F6 "595-SN74LV1T34DBVRG4" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DBVRG4?qs=vdi0iO8H4N10R%252Bt%252BjmxZrg%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SN74LV1T34DBVRG4" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X N.C. 1 0 0 200 R 50 50 0 0 N
+X A 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X Y 4 1100 0 200 L 50 50 0 0 P
+X VCC 5 1100 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
